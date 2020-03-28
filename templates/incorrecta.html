@@ -1,0 +1,9 @@
+{% extends "Index.html" %}
+
+{% block content %}
+
+<div th:if="${param.error}" class="alert alert-danger" role="alert">
+    contraseña incorrecta
+</div>
+
+{% endblock %}

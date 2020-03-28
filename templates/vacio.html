@@ -1,0 +1,10 @@
+
+{% extends "Index.html" %}
+
+{% block content %}
+
+<div th:if="${param.error}" class="alert alert-danger" role="alert">
+    Campo de dato vacio
+</div>
+
+{% endblock %}
