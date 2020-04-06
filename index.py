@@ -22,7 +22,7 @@ def validar():
         if expresion == '':
             return render_template('vacio.html')
 
-        patron = re.compile("[A-Z]{1}[0-9]{3}[a-z]{3}[\W]{3}")
+        patron = re.compile("[A-Z]{1}[0-9]{3}[a-z]+[\W]{3}")
 
         if patron.search(expresion):
             resultado = patron.search(expresion).group(0)
